@@ -14,7 +14,7 @@
   await BlocklyLib.runForever(async() => {
     await UArm.reset();
     UArm.set_speed(4);
-    varRandNum = mathRandomInt(4, 4);
+    varRandNum = mathRandomInt(2, 4);
     if (varRandNum == '1') {
       await UArm.set_position({ "x": 118, "y": -26, "z": 40 });
     } else if (varRandNum == '2') {
