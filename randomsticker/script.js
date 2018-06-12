@@ -1,26 +1,3 @@
- 
-
-New Project New
-
-icon_Save as Duplicate
-
-Save
-
-Discard
-
-Run
-
-
-
- 
-Blocks
-
-Javascript
-
-XML
-Drop Random Sticker
-
-Connected
 (async function() {
 
   var varRandNum;
@@ -69,15 +46,3 @@ Connected
   });
 
 }());
- hide side bar
-My Project
-Sync
-ID ID
-Name 名称
-1	Drop Random Sticker	
-
-
-Edit
-
-Import
-New task
