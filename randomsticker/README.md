@@ -16,3 +16,6 @@ This script picks up a random colored Waffle.io sticker every 45 seconds and dro
 1. Run Blockly script
 
 Note: There's currently a bug w/ the v1 sticker holder tray where the arm is unable to reach the sticker closest to the robot.  Therefore, only stickers 2-4 are use in this version of the code.
+
+![Image of Setup](IMG_6201.JPG)
+
