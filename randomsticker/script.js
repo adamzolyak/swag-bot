@@ -14,35 +14,35 @@
   await BlocklyLib.runForever(async() => {
     await UArm.reset();
     UArm.set_speed(4);
-    varRandNum = mathRandomInt(1, 4);
+    varRandNum = mathRandomInt(4, 4);
     if (varRandNum == '1') {
-      await UArm.set_position({ "x": 116, "y": -34, "z": 54 });
-    }
-    if (varRandNum == '2') {
-      await UArm.set_position({ "x": 184, "y": -62, "z": 56 });
-    }
-    if (varRandNum == '3') {
-      await UArm.set_position({ "x": 212, "y": 13, "z": 49 });
-    }
-    if (varRandNum == '4') {
-      await UArm.set_position({ "x": 138, "y": 32, "z": 52 });
+      await UArm.set_position({ "x": 118, "y": -26, "z": 40 });
+    } else if (varRandNum == '2') {
+      await UArm.set_position({ "x": 188, "y": -49, "z": 40 });
+    } else if (varRandNum == '3') {
+      await UArm.set_position({ "x": 212, "y": 29, "z": 40 });
+    } else if (varRandNum == '4') {
+      await UArm.set_position({ "x": 135, "y": 41, "z": 40 });
+    } else {
+      await UArm.set_position({ "x": 138, "y": 41, "z": 40 });
     }
     while (!UArm.TipSensor.getValue()) {
-      await UArm.set_position({ "z": 0 - 2, "relative": true });
+      await UArm.set_position({ "z": 0 - 1, "relative": true });
       await BlocklyLib.wait(0.05);
     }
-    await BlocklyLib.wait(0.25);
+    await BlocklyLib.wait(1);
     await UArm.set_pump({ "ON": true, "wait": true });
+    await BlocklyLib.wait(0.25);
     await UArm.set_position({ "z": 60, "relative": true });
-    await UArm.base_turn({ "angle": 170, "wait": true });
-    await BlocklyLib.wait(0.1);
-    await UArm.set_position({ "x": 30, "y": 137, "z": 99 });
-    await UArm.set_position({ "x": (mathRandomInt(50, 150)), "relative": true });
-    await UArm.set_position({ "y": 0 - (mathRandomInt(100, 200)), "relative": true });
-    await UArm.set_position({ "x": 0 - 10, "relative": true });
+    await BlocklyLib.wait(0.25);
+    await UArm.set_position({ "x": 32, "y": 300, "z": 148 });
+    await BlocklyLib.wait(0);
+    await UArm.set_position({ "x": (mathRandomInt(0, 100)), "relative": true });
+    await BlocklyLib.wait(0);
+    await UArm.set_position({ "y": 0 - (mathRandomInt(0, 200)), "relative": true });
     await UArm.set_pump({ "ON": false, "wait": true });
     await UArm.reset();
-    await BlocklyLib.wait(30);
+    await BlocklyLib.wait(45);
   });
 
 }());
