@@ -13,17 +13,22 @@ Parts
 ### Wiring
 
 1. Add jumper to Arduino Motor Shield v2 to use external power supply.
-1. Connect stepper to M2 / M1 connector on Arduino Motor Shield v2.  From top to bottom w/ pin connectors facing right. green
+2. Connect stepper to M2 / M1 connector on Arduino Motor Shield v2.  From top to bottom w/ pin connectors facing right. green
   * green
   * yellow
   * skip
   * red
   * blue
-1. Connect external power supply
-1. Upload code
+3. Connect external power supply
+4. Upload code
 
 Note: reversing red/blue will chage direction of forward / backward commands in code.
 
 https://learn.adafruit.com/adafruit-motor-shield-v2-for-arduino/using-stepper-motors
 
 ### Code
+
+### Notes
+
+7/29/2018
+Learned that Arduino Motor Shield v2 can only power stepper motors up to 1.2A per bridge.  However, the Nema 17 Stepper Motor Bipolar 2A are 2A per bridge.  Therefore, ordered [350ma bipolar stepper motor](https://www.amazon.com/gp/product/B01N30ISYC/ref=oh_aui_detailpage_o00_s00?ie=UTF8&psc=1) and 2x [DRV8871 breakouts](https://www.amazon.com/gp/product/B06Y4VRXN4/ref=oh_aui_detailpage_o00_s00?ie=UTF8&psc=1) to use higher powered bipolar stepper motors. 
