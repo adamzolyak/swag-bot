@@ -14,10 +14,11 @@ Parts
 
 1. Add jumper to Arduino Motor Shield v2 to use external power supply.
 1. Connect stepper to M2 / M1 connector on Arduino Motor Shield v2.  From top to bottom w/ pin connectors facing right. green
-  1. yellow
-  1. skip
-  1. red
-  1. blue
+  * green
+  * yellow
+  * skip
+  * red
+  * blue
 1. Connect external power supply
 1. Upload code
 
