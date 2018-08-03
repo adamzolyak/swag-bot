@@ -1,0 +1,509 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="{lUvZHLC1BW_eiC;1)`.">varRandNum</variable>
+  </variables>
+  <block type="loop_run_forever" id="IVHas#Pr5r:Smk#}MxH#" x="138" y="37">
+    <statement name="statement">
+      <block type="reset" id="hFa:lB1p[hKBZ=SF{L8!">
+        <comment pinned="false" h="80" w="160">Reset uArm to its home position.</comment>
+        <next>
+          <block type="set_speed" id="CD%[yg6HG1lJq6xrhH1m">
+            <field name="speed">4</field>
+            <next>
+              <block type="variables_set" id="?~XB6IzJ2@tcoJ[-BXbU">
+                <field name="VAR" id="{lUvZHLC1BW_eiC;1)`." variabletype="">varRandNum</field>
+                <value name="VALUE">
+                  <block type="math_random_int" id=":U]G)Fv0KIL$o(!T?.5f">
+                    <value name="FROM">
+                      <shadow type="math_number" id="3ir+]HSY|rnpNHEIV|=#">
+                        <field name="NUM">1</field>
+                      </shadow>
+                    </value>
+                    <value name="TO">
+                      <shadow type="math_number" id="S92j5CMx;0ohr#?.C1.F">
+                        <field name="NUM">4</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="controls_if" id="O0VO0tH*IwMjN0SqB9c5">
+                    <mutation elseif="3" else="1"></mutation>
+                    <value name="IF0">
+                      <block type="logic_compare" id="WhR./yl~DMhen[Qb$~sX">
+                        <field name="OP">EQ</field>
+                        <value name="A">
+                          <block type="variables_get" id="4V=eJWRU%UFsie7FTAv=">
+                            <field name="VAR" id="{lUvZHLC1BW_eiC;1)`." variabletype="">varRandNum</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="text" id="Z^,)!CXgb{))]txzkG$y">
+                            <field name="TEXT">1</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block type="move_to" id="1;?8.kOR)HSS@c(`(}-b">
+                        <value name="position">
+                          <shadow type="position">
+                            <value name="x">
+                              <shadow type="math_number">
+                                <field name="NUM">0</field>
+                              </shadow>
+                            </value>
+                            <value name="y">
+                              <shadow type="math_number">
+                                <field name="NUM">150</field>
+                              </shadow>
+                            </value>
+                            <value name="z">
+                              <shadow type="math_number">
+                                <field name="NUM">150</field>
+                              </shadow>
+                            </value>
+                          </shadow>
+                          <block type="position" id="H4:OYx71E@y@tYy$9UWa">
+                            <value name="x">
+                              <shadow type="math_number" id="]K7{9,9N@NdPRSDxD_cZ">
+                                <field name="NUM">143</field>
+                              </shadow>
+                            </value>
+                            <value name="y">
+                              <shadow type="math_number" id="py:#u}elllwL,z@1Cdq9">
+                                <field name="NUM">-3</field>
+                              </shadow>
+                            </value>
+                            <value name="z">
+                              <shadow type="math_number" id="XctC[~/I$B_{)3+u=reg">
+                                <field name="NUM">40</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </statement>
+                    <value name="IF1">
+                      <block type="logic_compare" id="@bFFD@,NmZ-GXve#N6XB">
+                        <field name="OP">EQ</field>
+                        <value name="A">
+                          <block type="variables_get" id="S+PX)AC=G!ffDjWvOtz-">
+                            <field name="VAR" id="{lUvZHLC1BW_eiC;1)`." variabletype="">varRandNum</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="text" id="9ceXf6t^|RcSL,)9E/.n">
+                            <field name="TEXT">2</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO1">
+                      <block type="move_to" id="uYfv0Cg7/dcM7wM9*91J">
+                        <value name="position">
+                          <shadow type="position">
+                            <value name="x">
+                              <shadow type="math_number">
+                                <field name="NUM">0</field>
+                              </shadow>
+                            </value>
+                            <value name="y">
+                              <shadow type="math_number">
+                                <field name="NUM">150</field>
+                              </shadow>
+                            </value>
+                            <value name="z">
+                              <shadow type="math_number">
+                                <field name="NUM">150</field>
+                              </shadow>
+                            </value>
+                          </shadow>
+                          <block type="position" id="D~zd(?s.ePw.%4m5k{QL">
+                            <value name="x">
+                              <shadow type="math_number" id=".tw*$XC*sm52~5!}Z};h">
+                                <field name="NUM">178</field>
+                              </shadow>
+                            </value>
+                            <value name="y">
+                              <shadow type="math_number" id="a1K9B-@feN!1FwOWjYK#">
+                                <field name="NUM">-46</field>
+                              </shadow>
+                            </value>
+                            <value name="z">
+                              <shadow type="math_number" id="^q6pPgO-KxC1ZiN=G=;v">
+                                <field name="NUM">40</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </statement>
+                    <value name="IF2">
+                      <block type="logic_compare" id="r2LP/BVce3e]7)RB#Ao%">
+                        <field name="OP">EQ</field>
+                        <value name="A">
+                          <block type="variables_get" id="XTN0WW9}:}XCtX9-sAM3">
+                            <field name="VAR" id="{lUvZHLC1BW_eiC;1)`." variabletype="">varRandNum</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="text" id="5cimUcZ*)z~^5Ly(H=/N">
+                            <field name="TEXT">3</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO2">
+                      <block type="move_to" id="(L^Qms7B$;ZValG7f?ey">
+                        <value name="position">
+                          <shadow type="position">
+                            <value name="x">
+                              <shadow type="math_number">
+                                <field name="NUM">0</field>
+                              </shadow>
+                            </value>
+                            <value name="y">
+                              <shadow type="math_number">
+                                <field name="NUM">150</field>
+                              </shadow>
+                            </value>
+                            <value name="z">
+                              <shadow type="math_number">
+                                <field name="NUM">150</field>
+                              </shadow>
+                            </value>
+                          </shadow>
+                          <block type="position" id="wx`Ud6$O.Uf4A_@ed}V%">
+                            <value name="x">
+                              <shadow type="math_number" id="NtY]}5HqFO4}Hx`k=36h">
+                                <field name="NUM">207</field>
+                              </shadow>
+                            </value>
+                            <value name="y">
+                              <shadow type="math_number" id="z|5n(S;nVxM[8bzY.m*f">
+                                <field name="NUM">25</field>
+                              </shadow>
+                            </value>
+                            <value name="z">
+                              <shadow type="math_number" id="~}N;FN3K:xL|=}Ly)ahN">
+                                <field name="NUM">40</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </statement>
+                    <value name="IF3">
+                      <block type="logic_compare" id="7^zZ~%f{p/)ZJ;1uAG6w">
+                        <field name="OP">EQ</field>
+                        <value name="A">
+                          <block type="variables_get" id="!ABe-Z@wWbgKZi5MrPCQ">
+                            <field name="VAR" id="{lUvZHLC1BW_eiC;1)`." variabletype="">varRandNum</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="text" id="*k/(u,3Jzl%@_6=n9z:8">
+                            <field name="TEXT">4</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO3">
+                      <block type="move_to" id="Hta9/,{`cUVd{7BlN0%L">
+                        <value name="position">
+                          <shadow type="position">
+                            <value name="x">
+                              <shadow type="math_number">
+                                <field name="NUM">0</field>
+                              </shadow>
+                            </value>
+                            <value name="y">
+                              <shadow type="math_number">
+                                <field name="NUM">150</field>
+                              </shadow>
+                            </value>
+                            <value name="z">
+                              <shadow type="math_number">
+                                <field name="NUM">150</field>
+                              </shadow>
+                            </value>
+                          </shadow>
+                          <block type="position" id="G%z,TMOOM}zX8eHM4H$K">
+                            <value name="x">
+                              <shadow type="math_number" id="OF9d:JLRJCLRN+*%_j/Y">
+                                <field name="NUM">168</field>
+                              </shadow>
+                            </value>
+                            <value name="y">
+                              <shadow type="math_number" id="fhgH^@F9!.=Vx8TF_:6O">
+                                <field name="NUM">56</field>
+                              </shadow>
+                            </value>
+                            <value name="z">
+                              <shadow type="math_number" id="HqXie}cD;;[p/G8Y,+D)">
+                                <field name="NUM">40</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </statement>
+                    <statement name="ELSE">
+                      <block type="move_to" id="30,R04;UOe}mTO7Qfs0M">
+                        <value name="position">
+                          <shadow type="position">
+                            <value name="x">
+                              <shadow type="math_number">
+                                <field name="NUM">0</field>
+                              </shadow>
+                            </value>
+                            <value name="y">
+                              <shadow type="math_number">
+                                <field name="NUM">150</field>
+                              </shadow>
+                            </value>
+                            <value name="z">
+                              <shadow type="math_number">
+                                <field name="NUM">150</field>
+                              </shadow>
+                            </value>
+                          </shadow>
+                          <block type="position" id="{%#byd2ejlp+BNmX(@ug">
+                            <value name="x">
+                              <shadow type="math_number" id="Ln(+O@]tLFc~^Vc_z2VQ">
+                                <field name="NUM">168</field>
+                              </shadow>
+                            </value>
+                            <value name="y">
+                              <shadow type="math_number" id="D?3qW*=f0a68_%w039zB">
+                                <field name="NUM">56</field>
+                              </shadow>
+                            </value>
+                            <value name="z">
+                              <shadow type="math_number" id="JIXJ1yi8D/Mp{Pjb;/$+">
+                                <field name="NUM">40</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </statement>
+                    <next>
+                      <block type="controls_whileUntil" id="F7(^=~6lL0yT9zWlO6~7">
+                        <field name="MODE">UNTIL</field>
+                        <value name="BOOL">
+                          <block type="condition_tip_sensor" id="sU,Hh7?ghx;JkUd-XzyL"></block>
+                        </value>
+                        <statement name="DO">
+                          <block type="move" id="r0(ajvt.NX3~4~CUsmN9">
+                            <field name="orientation">down</field>
+                            <comment pinned="false" h="80" w="160">Let uArm move relatively in absolute coordinates.</comment>
+                            <value name="value">
+                              <shadow type="math_number" id="(.L^5((BVx_`RJh#sQ`*">
+                                <field name="NUM">1</field>
+                              </shadow>
+                            </value>
+                            <next>
+                              <block type="wait" id="kvQzRYS`!*bl!w+f!jxQ">
+                                <value name="sec">
+                                  <shadow type="math_number" id="day4l|ZZm)K1w{DnHVb9">
+                                    <field name="NUM">0.05</field>
+                                  </shadow>
+                                </value>
+                              </block>
+                            </next>
+                          </block>
+                        </statement>
+                        <next>
+                          <block type="wait" id="A:9ATqLlumkl3P,_#5BL">
+                            <value name="sec">
+                              <shadow type="math_number" id="RDw85`6IebWoz|meJCDE">
+                                <field name="NUM">1</field>
+                              </shadow>
+                            </value>
+                            <next>
+                              <block type="set_pump" id="p-_![lXr]KfZ~ysK!aR}">
+                                <value name="value">
+                                  <shadow type="ON">
+                                    <field name="on_off">TRUE</field>
+                                  </shadow>
+                                  <block type="ON" id="mj^8+;Yf7.vcENIF0jgg">
+                                    <field name="on_off">TRUE</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="wait" id="$2~c_rKusF,H$JknYPyw">
+                                    <value name="sec">
+                                      <shadow type="math_number" id=":c:yhEDh]59?8RXQ~+ms">
+                                        <field name="NUM">0.25</field>
+                                      </shadow>
+                                    </value>
+                                    <next>
+                                      <block type="move" id="~N}9|$(c[AiBPtxWEtB7">
+                                        <field name="orientation">up</field>
+                                        <comment pinned="false" h="80" w="160">Let uArm move relatively in absolute coordinates.</comment>
+                                        <value name="value">
+                                          <shadow type="math_number" id="@O(G{?BC^A1soC2$19r7">
+                                            <field name="NUM">60</field>
+                                          </shadow>
+                                        </value>
+                                        <next>
+                                          <block type="wait" id="zuF!x(LSZ6z36539Mr(B">
+                                            <value name="sec">
+                                              <shadow type="math_number" id="e1+)ir0k-o7@XWYw6e?_">
+                                                <field name="NUM">0.25</field>
+                                              </shadow>
+                                            </value>
+                                            <next>
+                                              <block type="move_to" id="VbJ?;}1OtEysQFh+8F%w">
+                                                <value name="position">
+                                                  <shadow type="position">
+                                                    <value name="x">
+                                                      <shadow type="math_number">
+                                                        <field name="NUM">0</field>
+                                                      </shadow>
+                                                    </value>
+                                                    <value name="y">
+                                                      <shadow type="math_number">
+                                                        <field name="NUM">150</field>
+                                                      </shadow>
+                                                    </value>
+                                                    <value name="z">
+                                                      <shadow type="math_number">
+                                                        <field name="NUM">150</field>
+                                                      </shadow>
+                                                    </value>
+                                                  </shadow>
+                                                  <block type="position" id="9^#)ud}gcgNH)c!NxPz#">
+                                                    <value name="x">
+                                                      <shadow type="math_number" id="zhw6oK=Q^1D080`9%UNW">
+                                                        <field name="NUM">32</field>
+                                                      </shadow>
+                                                    </value>
+                                                    <value name="y">
+                                                      <shadow type="math_number" id="a0Hwav=lnjo?3_gxS.c%">
+                                                        <field name="NUM">300</field>
+                                                      </shadow>
+                                                    </value>
+                                                    <value name="z">
+                                                      <shadow type="math_number" id="?E3N/o1~v$AZtS:zN_A~">
+                                                        <field name="NUM">148</field>
+                                                      </shadow>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <next>
+                                                  <block type="wait" id="1Y3EMe!m|fW[s5]SiM{B">
+                                                    <value name="sec">
+                                                      <shadow type="math_number" id="Fob#Q9?#=y:Fhh8^xyY,">
+                                                        <field name="NUM">0</field>
+                                                      </shadow>
+                                                    </value>
+                                                    <next>
+                                                      <block type="move" id="|)=m=DfPhzOzu*2R~)^o">
+                                                        <field name="orientation">forward</field>
+                                                        <comment pinned="false" h="80" w="160">Let uArm move relatively in absolute coordinates.</comment>
+                                                        <value name="value">
+                                                          <shadow type="math_number" id="E:vJGMY[v=7(C+BX^y/|">
+                                                            <field name="NUM">10</field>
+                                                          </shadow>
+                                                          <block type="math_random_int" id="V_f`qr7p-A^OC[$lxo^^">
+                                                            <value name="FROM">
+                                                              <shadow type="math_number" id="Qd.zirYXrm%f$yZ?4G,|">
+                                                                <field name="NUM">0</field>
+                                                              </shadow>
+                                                            </value>
+                                                            <value name="TO">
+                                                              <shadow type="math_number" id="l}z@,-NHpONQ%+pCJCRc">
+                                                                <field name="NUM">100</field>
+                                                              </shadow>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                        <next>
+                                                          <block type="wait" id="2!z[PQ_(UNA%N#Tvw;nL">
+                                                            <value name="sec">
+                                                              <shadow type="math_number" id="0OlVBpsW%+(CB2kA-n$-">
+                                                                <field name="NUM">0</field>
+                                                              </shadow>
+                                                            </value>
+                                                            <next>
+                                                              <block type="move" id="Q~(*)#y)TC$gMEcH:NGL">
+                                                                <field name="orientation">right</field>
+                                                                <comment pinned="false" h="80" w="160">Let uArm move relatively in absolute coordinates.</comment>
+                                                                <value name="value">
+                                                                  <shadow type="math_number" id="8vdapYLadp;g7p6]hC:a">
+                                                                    <field name="NUM">10</field>
+                                                                  </shadow>
+                                                                  <block type="math_random_int" id="sOe7/uD55{/Agc#AA=R}">
+                                                                    <value name="FROM">
+                                                                      <shadow type="math_number" id="7z(?h|2HL!-jYxrw9f|0">
+                                                                        <field name="NUM">0</field>
+                                                                      </shadow>
+                                                                    </value>
+                                                                    <value name="TO">
+                                                                      <shadow type="math_number" id="2gIiuOV)Ceo)#jT]mbD+">
+                                                                        <field name="NUM">200</field>
+                                                                      </shadow>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                                <next>
+                                                                  <block type="set_pump" id="`6X6U^6G2NhTrE`YSYan">
+                                                                    <value name="value">
+                                                                      <shadow type="ON">
+                                                                        <field name="on_off">TRUE</field>
+                                                                      </shadow>
+                                                                      <block type="ON" id="FxM=/!f-.x1).:fCUlud">
+                                                                        <field name="on_off">FALSE</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <next>
+                                                                      <block type="reset" id="K4*Tf[02N!;{Y.NXeh0y">
+                                                                        <comment pinned="false" h="80" w="160">Reset uArm to its home position.</comment>
+                                                                        <next>
+                                                                          <block type="wait" id="f~O^fpD^gu{J57DgNY$s">
+                                                                            <value name="sec">
+                                                                              <shadow type="math_number" id="bH}Txq29CI]9u`CxJ|Nm">
+                                                                                <field name="NUM">30</field>
+                                                                              </shadow>
+                                                                            </value>
+                                                                          </block>
+                                                                        </next>
+                                                                      </block>
+                                                                    </next>
+                                                                  </block>
+                                                                </next>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>
