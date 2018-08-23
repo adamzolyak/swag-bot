@@ -19,7 +19,7 @@ blue_led.on()
 #thresholds = [(30, 100, 15, 127, 15, 127), # generic_red_thresholds -> index is 0 so code == (1 << 0)
 #              (30, 100, -64, -8, -32, 32)] # generic_green_thresholds -> index is 1 so code == (1 << 1)
 
-thresholds = [(55, 100,-24, 11, 32, 86),     #1#yellow
+thresholds = [(41, 93, -74, -7, -128, -7),     #1#blue
               (27, 100, 42, 80, 30, 64),     #2#red
               (39, 100,-51,-12, 10, 57)]      #4#green
 # Codes are or'ed together when "merge=True" for "find_blobs".
@@ -39,7 +39,7 @@ red_led.off()
 object_x_old = 0
 object_y_old = 0
 
-code = 2 ## 1:yellow   2:red    4:green
+code = 1 ## 1:blue   2:red    4:green
 buf = "00"
 # Only blobs that with more pixels than "pixel_threshold" and more area than "area_threshold" are
 # returned by "find_blobs" below. Change "pixels_threshold" and "area_threshold" if you change the
@@ -55,7 +55,7 @@ while(True):
 
 
     img = sensor.snapshot()
-    for blob in img.find_blobs(thresholds, pixels_threshold=100, area_threshold=100, merge=False):
+    for blob in img.find_blobs(thresholds, pixels_threshold=50, area_threshold=50, merge=False):
 #check with color should be detect
         if uart.any()>0 :
             buf=uart.read()
@@ -81,8 +81,8 @@ while(True):
             if blob.cx()!=None and (
                 abs(object_x_old - int(blob.cx())) < 8 and
                 abs(object_y_old - int(blob.cy())) < 8) and (
-                blob.w()>35 and
-                blob.h()>35):
+                blob.w()>15 and
+                blob.h()>15):
                #just detect the objects. turn on the blue only
                blue_led.on()
                red_led.off()

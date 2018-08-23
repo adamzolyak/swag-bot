@@ -10,7 +10,7 @@ int x_uarm_offset=-5, y_uarm_offset=-25;
 unsigned long times;
 char buf[20],
      flag=0;
-char color_sel=1;// 0:yellow   1:red   2:green
+char color_sel=0;// 0:blue   1:red   2:green
      
 unsigned char get_openmv_data();
 void pick_and_palce();
